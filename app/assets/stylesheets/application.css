@@ -15,6 +15,7 @@
 /* Fixes the bootstrap navbar problem. */
 body {
 	padding-top: 40px;
+	background: #EEE;
 }
 @media screen and (max-width: 768px) {
     body {

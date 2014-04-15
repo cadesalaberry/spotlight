@@ -5,13 +5,17 @@
 
 <div class="row">
 	<div class="col-md-6">
-		<div style="center-block">
-			<div>Left</div>
+		<div class="wow fadeInLeft grid">
+			<% (1..12).each do |i| %><div class="grid-cell third">
+				<%= image_tag("amber_pool.jpg", :alt => "") %>
+			</div><% end %>	
 		</div>
 	</div>
 	<div class="col-md-6">
-		<div style="center-block">
-			<div>Right</div>
+		<div class="wow fadeInLeft grid">
+			<% (1..12).each do |i| %><div class="grid-cell third">
+				<%= image_tag("amber_head.jpg", :alt => "") %> 
+			</div><% end %>	
 		</div>
 	</div>
 </div>
