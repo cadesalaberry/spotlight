@@ -1,5 +1,25 @@
 @import "bootstrap";
 
+body {
+	padding-top: 6rem;
+	background: #EEE;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+    	padding-top: 0px;
+    }
+}
+
+.fullscreen {
+	padding-top: 0;
+	min-width: 100%;
+	min-height: 100%;
+	display: block;
+	position: relative;
+	z-index: 0;
+}
+
 /* footer */
 
 footer {
@@ -29,4 +49,29 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 10px;
+}
+
+.gallery-box {
+	position: relative;
+}
+.title {
+	font-size: 10rem;
+	color: rgba(255,255,255,.8);
+	background:rgba(0,0,0,.5);
+	padding: 2rem 5rem;
+}
+
+.subtitle {
+	font-size: 5rem;
+	color: rgba(255,255,255,.7);
+	background:rgba(0,0,0,.3);
+	padding: 1rem 2rem;
+}
+.on-top {
+	z-index: 20;
+	position: relative;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	
 }

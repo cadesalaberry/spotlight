@@ -1,19 +1,23 @@
-<div class="container">
+<!--<div class="container">
 	<h1>Hello baby !!! Welcome#index</h1>
 	<p>Find me in app/views/welcome/index.html.erb</p>
-</div>
-
+</div>-->
 <div class="row">
 	<div class="col-md-6">
-		<div class="grid">
-			<% (1..12).each do |i| %><div data-wow-delay="<%=i%>s"class="wow fadeInLeft grid-cell third">
+		<div class="grid gallery-box">
+			<div class="on-top title">Roomates</div>
+			<div class="on-top subtitle">Coming soon</div>
+			<% (0..8).each do |i| %><div data-wow-delay="<%=1+(i/3/3.0)%>s"class="fadeIn grid-cell third">
 				<%= image_tag("amber_pool.jpg", :alt => "") %>
 			</div><% end %>	
 		</div>
 	</div>
+
 	<div class="col-md-6">
-		<div class"grid">
-			<% (1..12).each do |i| %><div data-wow-delay="<%=i%>s"class="wow fadeInRight grid-cell third">
+		<div class="grid gallery-box">
+			<div class="on-top title">Housing</div>
+			<div class="on-top subtitle">Coming soon</div>
+			<% (0..8).each do |i| %><div data-wow-delay="<%=1+(i/3/3.0)%>s"class="fadeIn grid-cell third">
 				<%= image_tag("amber_head.jpg", :alt => "") %> 
 			</div><% end %>	
 		</div>
