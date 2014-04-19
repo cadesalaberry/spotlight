@@ -7,9 +7,7 @@
 		<div class="grid gallery-box">
 			<div class="on-top title">Roomates</div>
 			<div class="on-top subtitle">Coming soon</div>
-			<% (0..8).each do |i| %><div data-wow-delay="<%=1+(i/3/3.0)%>s"class="fadeIn grid-cell third">
-				<%= image_tag("amber_pool.jpg", :alt => "") %>
-			</div><% end %>	
+			<% (0..8).each do |i| %><div style="background-image: url('<%= image_url "roomates-#{i}.jpg" %>');" class="picture"></div><% end %>
 		</div>
 	</div>
 
@@ -18,7 +16,7 @@
 			<div class="on-top title">Housing</div>
 			<div class="on-top subtitle">Coming soon</div>
 			<% (0..8).each do |i| %><div data-wow-delay="<%=1+(i/3/3.0)%>s"class="fadeIn grid-cell third">
-				<%= image_tag("amber_head.jpg", :alt => "") %> 
+				<%= image_tag("housing-#{i}.jpg", :alt => "") %> 
 			</div><% end %>	
 		</div>
 	</div>

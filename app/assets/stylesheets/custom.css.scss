@@ -59,6 +59,8 @@ footer ul li {
 	color: rgba(255,255,255,.8);
 	background:rgba(0,0,0,.5);
 	padding: 2rem 5rem;
+	margin-top: -15rem;
+	text-align: center;
 }
 
 .subtitle {
@@ -66,12 +68,19 @@ footer ul li {
 	color: rgba(255,255,255,.7);
 	background:rgba(0,0,0,.3);
 	padding: 1rem 2rem;
+	margin-top: 10rem;
+	text-align: center;
 }
 .on-top {
 	z-index: 20;
-	position: relative;
-	margin: 0 auto;
-	top: 0;
-	left: 0;
-	
+	position: absolute;
+	top: 50%;	
+}
+
+.picture {
+	height: 150px;
+	width: 30%;
+	display: inline-block;
+	background-position: center;
+	background-size: cover;
 }
