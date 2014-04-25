@@ -2,24 +2,42 @@
 	<h1>Hello baby !!! Welcome#index</h1>
 	<p>Find me in app/views/welcome/index.html.erb</p>
 </div>-->
-<div class="row">
+<div class='container-fluid'>
+	<div class="row">
 	<div class="col-md-6">
-		<div class="grid gallery-box">
-			<div class="on-top title">Roomates</div>
-			<div class="on-top subtitle">Coming soon</div>
-			<% (0..8).each do |i| %>
-			<div class="picture" data-wow-delay="<%=1+(i/3/3.0)%>s" style="background-image: url('<%= image_url "welcome/thumbs/roomates-#{i}.jpg" %>');"></div>
-			<% end %>
+		<div class="gallery-box">
+			<div class="on-top">
+				<div>
+					<div class="title">Roomates</div>
+				</div>
+				<div>
+					<div class="subtitle">Coming soon</div>
+				</div>
+			</div>
+			<div>
+				<% (0..8).each do |i| %>
+				<div class="picture" data-wow-delay="<%=1+(i/3/3.0)%>s" style="background-image: url('<%= image_url "welcome/thumbs/roomates-#{i}.jpg" %>');"></div>
+				<% end %>
+			</div>
 		</div>
 	</div>
 
 	<div class="col-md-6">
-		<div class="grid gallery-box">
-			<div class="on-top title">Housing</div>
-			<div class="on-top subtitle">Coming soon</div>
-			<% (0..8).each do |i| %>
-			<div class="picture" data-wow-delay="<%=1+(i/3/3.0)%>s" style="background-image: url('<%= image_url "welcome/thumbs/housing-#{i}.jpg" %>');"></div>
-			<% end %>
+		<div class="gallery-box">
+			<div class="on-top">
+				<div>
+					<div class="title">Housing</div>
+				</div>
+				<div>
+					<div class="subtitle">Coming soon</div>
+				</div>
+			</div>
+			<div>
+				<% (0..8).each do |i| %>
+				<div class="picture" data-wow-delay="<%=1+(i/3/3.0)%>s" style="background-image: url('<%= image_url "welcome/thumbs/housing-#{i}.jpg" %>');"></div>
+				<% end %>
+			</div>
 		</div>
 	</div>
+</div>
 </div>
