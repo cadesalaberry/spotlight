@@ -75,6 +75,18 @@ footer ul li {
   margin-left: 10px;
 }
 
+
+/* THE REST */
+
+.single_teaser.icons.style1:hover [class^="rt-icon-"] {
+	color: #fff;
+	-webkit-transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
 .gallery-box {
 	position: relative;
 	text-align: center;

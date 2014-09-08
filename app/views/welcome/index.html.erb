@@ -3,41 +3,44 @@
 	<p>Find me in app/views/welcome/index.html.erb</p>
 </div>-->
 <div class='container-fluid'>
-	<div class="row">
-	<div class="col-md-6">
-		<div class="gallery-box">
-			<div class="on-top">
-				<div>
-					<div class="title">Roomates</div>
-				</div>
-				<div>
-					<div class="subtitle">Coming soon</div>
-				</div>
-			</div>
-			<div>
-				<% (0..8).each do |i| %>
-				<div class="picture" data-wow-delay="<%=1+(i/3/3.0)%>s" style="background-image: url('<%= image_url "welcome/thumbs/roomates-#{i}.jpg" %>');"></div>
-				<% end %>
-			</div>
-		</div>
-	</div>
+	<section id="info" class="grey_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2 class="block-header to_animate animated bounce" data-animation="bounce" data-delay="100">Our Services</h2>
+                    <blockquote class="to_animate animated pullUp" data-animation="pullUp" data-delay="100">We offer you a multifunctional platform for you to be able to find accurately and quickly a roommate, get great tips on how to settle quickly in your new city and get fast results on Padmapper.</blockquote>
+                </div>
+            </div>
+            <div class="row">
+                <div class="block col-sm-4 to_animate animated fadeInLeft" data-animation="fadeInLeft" data-delay="200" style="opacity: 0;">
+                    <div class="single_teaser icons style1">
+                        <div class="icons_introimg image-icon">
+                            <i class="rt-icon-briefcase"></i>
+                        </div>
+                        <h3><a href="#">Find your match</a></h3>
+                        <p class="introtext">Lorem ipsum dolor met consetetur sadipscing elitrsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    </div>
+                </div>      
+                <div class="block col-sm-4 to_animate animated fadeInUp" data-animation="fadeInUp" data-delay="200" style="opacity: 0;">
+                    <div class="single_teaser icons style1">
+                        <div class="icons_introimg image-icon">
+                            <i class="rt-icon-picture"></i>
+                        </div>
+                        <h3><a href="#">Settle faster with our tips</a></h3>
+                        <p class="introtext">Stet clita kasd gubergren, no sea takimata sanctus est consetetur sadipscing elitr accusam aliquyam diam diam dolore dolores duo eirmod.</p>
+                    </div>
+                </div>      
+                <div class="block col-sm-4 to_animate animated fadeInRight" data-animation="fadeInRight" data-delay="200" style="opacity: 0;">
+                    <div class="single_teaser icons style1">
+                        <div class="icons_introimg image-icon">
+                            <i class="rt-icon-light-bulb"></i>
+                        </div>
+                        <h3><a href="#">Find your home in no time</a></h3>
+                        <p class="introtext">At accusam aliquyam diam diam dolore dolores eirmodeos erat, et nonumy sed tempor et et invidunt justo labore stet clita.</p>
+                    </div>
+                </div>      
 
-	<div class="col-md-6">
-		<div class="gallery-box">
-			<div class="on-top">
-				<div>
-					<div class="title">Housing</div>
-				</div>
-				<div>
-					<div class="subtitle">Coming soon</div>
-				</div>
-			</div>
-			<div>
-				<% (0..8).each do |i| %>
-				<div class="picture" data-wow-delay="<%=1+(i/3/3.0)%>s" style="background-image: url('<%= image_url "welcome/thumbs/housing-#{i}.jpg" %>');"></div>
-				<% end %>
-			</div>
-		</div>
-	</div>
-</div>
+            </div>
+        </div>
+    </section>
 </div>
