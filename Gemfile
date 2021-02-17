@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.1.14.2' # This change was made via Snyk to fix a vulnerability
+gem 'rails', '~> 6.0.3.5' # This change was made via Snyk to fix a vulnerability
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
